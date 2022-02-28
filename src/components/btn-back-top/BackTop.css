@@ -1,0 +1,81 @@
+@-webkit-keyframes dot {
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dot {
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.btn-arrow-up {
+  position: fixed;
+  background-color: rgba(255, 74, 82, 0.7);
+  width: 40px;
+  height: 40px;
+  right: 3rem;
+  bottom: 3rem;
+  cursor: pointer;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  z-index: 18;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-arrow-up:hover {
+  background-color: #ff4a52;
+}
+
+.btn-arrow-up i {
+  color: #fff;
+  font-size: 2rem;
+}
+
+@-webkit-keyframes buttonUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes buttonUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+/*# sourceMappingURL=BackTop.css.map */

@@ -1,0 +1,139 @@
+@-webkit-keyframes dot {
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dot {
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.search-form {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 20;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.search-form .close-btn {
+  outline: none;
+  border: none;
+  padding: 1rem;
+  background-color: #fff;
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+.search-form .close-btn:hover {
+  color: #ff4a52;
+}
+
+.search-form .close-btn:focus {
+  outline: none;
+}
+
+.search-form .input-search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 7rem;
+  width: 60rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-form .input-search input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(139, 139, 139, 0.7)), to(transparent));
+  background: linear-gradient(to right, transparent, rgba(139, 139, 139, 0.7), transparent);
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.search-form .input-search .submit-search {
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  outline: none;
+}
+
+.search-form .input-search .submit-search i {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 850px) {
+  .search-form .input-search {
+    width: 60%;
+  }
+  .search-form .input-search input {
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(139, 139, 139, 0.8)), to(transparent));
+    background: linear-gradient(to right, transparent, rgba(139, 139, 139, 0.8), transparent);
+    font-size: 2rem;
+  }
+  .search-form .input-search .submit-search i {
+    font-size: 2rem;
+  }
+}
+
+.search-form-appear {
+  height: 100vh;
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACmDA,UAAU,CAAV,GAAU;EACR,IAAI;IACF,SAAS,EAAE,QAAQ;IACnB,OAAO,EAAE,GAAG;;EAEd,EAAE;IACA,SAAS,EAAE,QAAQ;IACnB,OAAO,EAAE,CAAC;;;;ADxDd,AAAA,QAAQ,CAAC;EACP,KAAK,EAAE,GAAG;CACX;;AACD,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAClC,AAAA,QAAQ,CAAC;IACP,KAAK,EAAE,IAAI;GACZ",
+    "sources": [
+        "Sidebar.scss",
+        "../../../scss/variables.scss"
+    ],
+    "names": [],
+    "file": "Sidebar.css"
+}

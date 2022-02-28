@@ -1,0 +1,87 @@
+@-webkit-keyframes dot {
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dot {
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.filter {
+  width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-top: 50px;
+}
+
+.filter input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  outline: none;
+  font-size: 1.6rem;
+  height: 6rem;
+  padding: 1rem;
+  border: 1px solid #aaaaaa;
+}
+
+.filter button {
+  height: 6rem;
+  width: 6rem;
+  outline: none;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.filter button:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .filter {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .filter {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 90%;
+    margin: 50px auto;
+  }
+  .filter input {
+    height: 5rem;
+  }
+  .filter button {
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=Filter.css.map */

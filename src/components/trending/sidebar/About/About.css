@@ -1,0 +1,94 @@
+@-webkit-keyframes dot {
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dot {
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.sidebar__about {
+  padding: 3rem;
+  margin-bottom: 4rem;
+  min-height: 600px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar__about h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  width: 100%;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  position: relative;
+  font-size: 2rem;
+}
+
+.sidebar__about h3::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -2px;
+  width: 5rem;
+  height: 3px;
+  background-color: #ff4a52;
+}
+
+.sidebar__about--avt {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 4rem;
+}
+
+.sidebar__about--avt img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sidebar__about--name {
+  font-size: 3.5rem;
+  font-family: "Kalam", cursive;
+}
+
+.sidebar__about--intro {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: auto;
+}
+/*# sourceMappingURL=About.css.map */

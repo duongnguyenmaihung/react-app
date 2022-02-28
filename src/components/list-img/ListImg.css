@@ -1,0 +1,139 @@
+@-webkit-keyframes dot {
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dot {
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.list-image {
+  width: 100%;
+  height: 25rem;
+  position: relative;
+}
+
+.list-image .follow-ig {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 240px;
+  padding: 1.3rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #000;
+  z-index: 4;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.list-image .follow-ig:hover {
+  text-decoration: none;
+  background-color: #ff4a52;
+  color: #fff;
+}
+
+.list-image .follow-ig i {
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+
+.list-image ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.list-image ul li {
+  width: calc(100% / 8);
+  height: 100%;
+  overflow: hidden;
+}
+
+.list-image ul li a {
+  display: block;
+  height: 100%;
+  cursor: pointer;
+}
+
+.list-image ul li a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.list-image ul li a img:hover {
+  -webkit-transform: scale(1.2) rotate(4deg);
+          transform: scale(1.2) rotate(4deg);
+}
+
+@media screen and (max-width: 1200px) {
+  .list-image .follow-ig {
+    width: 200px;
+  }
+  .list-image ul li {
+    width: calc(100% / 6);
+  }
+  .list-image ul li:last-child {
+    display: none;
+  }
+  .list-image ul li:nth-child(7) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .list-image {
+    height: 15rem;
+  }
+  .list-image a {
+    font-size: 1.2rem;
+  }
+  .list-image ul li {
+    width: calc(100% / 4);
+  }
+  .list-image ul li:nth-child(6) {
+    display: none;
+  }
+  .list-image ul li:nth-child(5) {
+    display: none;
+  }
+}
+/*# sourceMappingURL=ListImg.css.map */

@@ -1,0 +1,91 @@
+@-webkit-keyframes dot {
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dot {
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.sidebar__follow {
+  padding: 3rem;
+  margin-bottom: 4rem;
+  min-height: 300px;
+  background-color: #fff;
+}
+
+.sidebar__follow h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  width: 100%;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  position: relative;
+  font-size: 2.5rem;
+}
+
+.sidebar__follow h3::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -2px;
+  width: 5rem;
+  height: 3px;
+  background-color: #ff4a52;
+}
+
+.sidebar__follow--network {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5rem;
+  -ms-grid-rows: 45px 45px 45px;
+      grid-template-rows: 45px 45px 45px;
+}
+
+.sidebar__follow--network button {
+  border: none;
+  outline: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.4rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.sidebar__follow--network button i {
+  margin-right: 1rem;
+  font-size: 1.6rem;
+}
+
+.sidebar__follow--network button:hover {
+  background-color: #ff4a52;
+  color: #fff;
+}
+
+.sidebar__follow--network button:focus {
+  outline: none;
+}
+/*# sourceMappingURL=Follow.css.map */

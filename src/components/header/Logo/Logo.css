@@ -1,0 +1,70 @@
+@-webkit-keyframes dot {
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dot {
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  padding: 0.5rem 0;
+  color: #fff;
+}
+
+.header__logo:hover {
+  color: #ff4a52;
+  text-decoration: none;
+}
+
+.header__logo i {
+  font-size: 4rem;
+  margin-right: 2rem;
+}
+
+.header__logo p {
+  font-family: "Kalam", cursive;
+  font-size: 3rem;
+  line-height: 2.2rem;
+}
+
+.header__logo p span {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=Logo.css.map */

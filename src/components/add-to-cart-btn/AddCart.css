@@ -1,0 +1,46 @@
+@-webkit-keyframes dot {
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dot {
+  from {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.btn-addToCart {
+  width: 10rem;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #ff4a52;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+.btn-addToCart:hover {
+  background-color: #ff4a52;
+  border: none;
+  color: #fff;
+}
+/*# sourceMappingURL=AddCart.css.map */
